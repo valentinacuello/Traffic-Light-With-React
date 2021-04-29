@@ -30,7 +30,8 @@ const TrafficLight = () => {
 				<div
                     className={luz == "g" ? "green encendida" : "green"}//acá planteo un ternario donde pregunto si el estado luz
                     //es igual a "g" (parametro que le paso a la función), si ese parámetro es true, entonces mediante la clase
-                    //encendida en css le agrego un display block a las clases que tienen el "glow"
+                    //encendida en css le agrego un display block a las clases que tienen el "glow", sino, esa clase no se le agrega
+                    //queda solo la clase green (o yellow o red)
 					onClick={() => prenderLuz("g")}>
 					<div className="green-glow"></div>
 				</div>
